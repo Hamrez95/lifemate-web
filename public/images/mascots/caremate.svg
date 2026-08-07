@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">CareMate mascot</title>
+  <desc id="desc">A friendly white care robot with blue ear pieces holding a pink heart.</desc>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#eef6fb"/>
+      <stop offset="1" stop-color="#cfdbe6"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fd5ff"/>
+      <stop offset="1" stop-color="#5489e8"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8da3"/>
+      <stop offset="0.55" stop-color="#ff617f"/>
+      <stop offset="1" stop-color="#df4168"/>
+    </linearGradient>
+    <radialGradient id="screen" cx="35%" cy="25%" r="75%">
+      <stop offset="0" stop-color="#f9ffff"/>
+      <stop offset="1" stop-color="#c9dde7"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#24466f" flood-opacity=".22"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="450" cy="1080" rx="250" ry="58" fill="#6787a8" opacity=".16" filter="url(#soft)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="235" y="98" width="430" height="420" rx="154" fill="url(#body)" stroke="#b9c8d4" stroke-width="14"/>
+    <rect x="284" y="146" width="332" height="286" rx="105" fill="url(#screen)" stroke="#d7e4eb" stroke-width="10"/>
+
+    <g>
+      <rect x="168" y="176" width="103" height="246" rx="50" fill="#7faee9" stroke="#4978bf" stroke-width="12"/>
+      <rect x="185" y="197" width="72" height="204" rx="35" fill="url(#blue)"/>
+      <rect x="629" y="176" width="103" height="246" rx="50" fill="#7faee9" stroke="#4978bf" stroke-width="12"/>
+      <rect x="643" y="197" width="72" height="204" rx="35" fill="url(#blue)"/>
+      <path d="M231 184c16-92 80-142 219-142 141 0 207 49 222 143" fill="none" stroke="#4d79b7" stroke-width="22" stroke-linecap="round"/>
+      <path d="M278 134c42-50 99-72 172-72 76 0 133 22 174 72" fill="none" stroke="#93c8f4" stroke-width="12" stroke-linecap="round"/>
+    </g>
+
+    <g fill="#162339">
+      <ellipse cx="377" cy="280" rx="43" ry="63"/>
+      <ellipse cx="525" cy="280" rx="43" ry="63"/>
+      <ellipse cx="364" cy="263" rx="10" ry="16" fill="#fff" opacity=".9"/>
+      <ellipse cx="512" cy="263" rx="10" ry="16" fill="#fff" opacity=".9"/>
+      <path d="M417 347c21 26 45 26 68 0-3 39-55 53-68 0Z"/>
+      <path d="M438 355c9 8 18 8 27 0" fill="none" stroke="#ff9fb1" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <ellipse cx="327" cy="350" rx="31" ry="18" fill="#ff9eb0" opacity=".72"/>
+    <ellipse cx="573" cy="350" rx="31" ry="18" fill="#ff9eb0" opacity=".72"/>
+
+    <path d="M266 500c-52 73-69 154-57 244l33 241c9 65 64 112 130 112h157c66 0 120-47 129-112l33-241c12-90-5-171-57-244-83 43-284 43-368 0Z" fill="url(#body)" stroke="#b9c8d4" stroke-width="14"/>
+
+    <g>
+      <path d="M163 625c-77 32-114 103-84 168 25 54 88 71 150 44l62-29-58-189-70 6Z" fill="url(#body)" stroke="#b9c8d4" stroke-width="14"/>
+      <ellipse cx="184" cy="725" rx="78" ry="93" transform="rotate(-13 184 725)" fill="url(#blue)" stroke="#5d8bc6" stroke-width="12"/>
+      <path d="M737 625c77 32 114 103 84 168-25 54-88 71-150 44l-62-29 58-189 70 6Z" fill="url(#body)" stroke="#b9c8d4" stroke-width="14"/>
+      <ellipse cx="716" cy="725" rx="78" ry="93" transform="rotate(13 716 725)" fill="url(#blue)" stroke="#5d8bc6" stroke-width="12"/>
+    </g>
+
+    <path d="M449 978 275 823c-116-103-28-286 112-225 28 12 49 34 62 58 13-24 34-46 62-58 140-61 228 122 112 225L449 978Z" fill="url(#heart)" stroke="#cf365d" stroke-width="14"/>
+    <path d="M340 661c43-45 89-20 109 18 20-38 66-63 109-18" fill="none" stroke="#ffb9c5" stroke-width="18" stroke-linecap="round" opacity=".75"/>
+
+    <path d="M319 1038v72c0 36 27 66 63 66h44v-140" fill="url(#body)" stroke="#b9c8d4" stroke-width="14"/>
+    <path d="M581 1038v72c0 36-27 66-63 66h-44v-140" fill="url(#body)" stroke="#b9c8d4" stroke-width="14"/>
+    <rect x="330" y="1127" width="105" height="42" rx="20" fill="#6b89aa" opacity=".45"/>
+    <rect x="465" y="1127" width="105" height="42" rx="20" fill="#6b89aa" opacity=".45"/>
+  </g>
+</svg>
