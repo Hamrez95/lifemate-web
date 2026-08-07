@@ -11,7 +11,7 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
-  images: { formats: ["image/avif", "image/webp"] },
+  images: { formats: ["image/avif", "image/webp"], unoptimized: true },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   }
