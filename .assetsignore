@@ -1,0 +1,7 @@
+README.md
+PREVIEW.md
+wrangler.jsonc
+.assetsignore
+_headers
+.git
+.git/**
