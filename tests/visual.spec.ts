@@ -13,7 +13,10 @@ const viewports = [
 async function ready(page: import("@playwright/test").Page) {
   await page.waitForLoadState("networkidle");
   await page.evaluate(() => document.fonts.ready);
+  await page.waitForFunction(() => Array.from(document.images).every((image) => image.complete));
   await expect(page.locator("main")).toBeVisible();
+  const brokenImages = await page.locator("img").evaluateAll((images) => images.filter((image) => image.naturalWidth === 0).map((image) => image.getAttribute("src")));
+  expect(brokenImages, `Broken images: ${brokenImages.join(", ")}`).toEqual([]);
 }
 
 test("capture core visual QA matrix", async ({ page }) => {
