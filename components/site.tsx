@@ -57,7 +57,8 @@ export function Card({ children, className = "" }: { children: React.ReactNode; 
 export function Section({ children, className = "", id }: { children: React.ReactNode; className?: string; id?: string }) { return <section className={`section ${className}`} id={id}><div className="container">{children}</div></section>; }
 
 export function Mascot({ kind, alt = "" }: { kind: "wellmate" | "caremate"; alt?: string }) {
-  return <Image className={`mascot mascot-${kind}`} src={`/images/mascots/${kind}.webp`} alt={alt} width={kind === "wellmate" ? 763 : 900} height={1200} sizes="(max-width: 520px) 100px, (max-width: 900px) 160px, 240px" />;
+  const src = kind === "caremate" ? "/images/mascots/caremate.svg" : "/images/mascots/wellmate.webp";
+  return <Image className={`mascot mascot-${kind}`} src={src} alt={alt} width={kind === "wellmate" ? 763 : 900} height={1200} sizes="(max-width: 520px) 100px, (max-width: 900px) 160px, 240px" />;
 }
 
 export function DownloadBadge({ store, comingSoon }: { store: string; comingSoon: string }) {
@@ -110,7 +111,7 @@ export function FAQ({ locale }: { locale: Locale }) {
   return <Section className="faq-section"><div className="section-heading centered"><Badge>{ui[locale].faqBadge}</Badge><h2>{t.faqTitle}</h2></div><Accordion items={t.faqs} /></Section>;
 }
 
-export function Breadcrumb({ locale, page, label }: { locale: Locale; page: PageKey; label: string }) {
+export function Breadcrumb({ locale, label }: { locale: Locale; page: PageKey; label: string }) {
   return <nav className="breadcrumb" aria-label="Breadcrumb"><Link href={localizedPath(locale,"home")}>{copy[locale].nav.home}</Link><span>›</span><span aria-current="page">{label}</span></nav>;
 }
 
@@ -118,4 +119,4 @@ export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) { retu
 export function Textarea(props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) { return <textarea className="textarea" {...props} />; }
 export function FormError({ children }: { children: React.ReactNode }) { return <p className="form-error" role="alert">{children}</p>; }
 export function Loading({ label = "Loading" }: { label?: string }) { return <div className="loading" role="status"><span className="spinner" aria-hidden="true" />{label}</div>; }
-export function EmptyState({ title, text }: { title: string; text: string }) { return <div className="empty-state"><span>◇</span><h3>{title}</h3><p>{text}</p></div>; }
+export function EmptyState({ title, text }: { title: string; text: string }) { return <div className="empty-state"><span>◇</span><h3>{title}</h3><p>{text}</p></div>;
