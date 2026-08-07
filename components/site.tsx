@@ -119,4 +119,4 @@ export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) { retu
 export function Textarea(props: React.TextareaHTMLAttributes<HTMLTextAreaElement>) { return <textarea className="textarea" {...props} />; }
 export function FormError({ children }: { children: React.ReactNode }) { return <p className="form-error" role="alert">{children}</p>; }
 export function Loading({ label = "Loading" }: { label?: string }) { return <div className="loading" role="status"><span className="spinner" aria-hidden="true" />{label}</div>; }
-export function EmptyState({ title, text }: { title: string; text: string }) { return <div className="empty-state"><span>◇</span><h3>{title}</h3><p>{text}</p></div>;
+export function EmptyState({ title, text }: { title: string; text: string }) { return <div className="empty-state"><span>◇</span><h3>{title}</h3><p>{text}</p></div>; }
