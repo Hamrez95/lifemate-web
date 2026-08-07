@@ -48,23 +48,16 @@ function useDialogA11y(open: boolean, containerRef: React.RefObject<HTMLElement 
 }
 
 export function ThemeToggle({ label }: { label: string }) {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
-
-  useEffect(() => {
-    const current = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
-    setTheme(current);
-  }, []);
-
   const toggle = () => {
-    const next = theme === "dark" ? "light" : "dark";
-    setTheme(next);
+    const current = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+    const next = current === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
     localStorage.setItem("lifemate-theme", next);
   };
 
   return (
-    <button className="icon-button theme-toggle" type="button" onClick={toggle} aria-label={label} aria-pressed={theme === "dark"}>
-      <span aria-hidden="true">{theme === "dark" ? "☾" : "☼"}</span>
+    <button className="icon-button theme-toggle" type="button" onClick={toggle} aria-label={label}>
+      <span aria-hidden="true">◐</span>
     </button>
   );
 }
