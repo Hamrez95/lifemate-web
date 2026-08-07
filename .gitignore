@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.open-next/
+.wrangler/
+playwright-report/
+test-results/
+*.log
+.env*
+!.env.example
+cloudflare-env.d.ts
+.DS_Store
