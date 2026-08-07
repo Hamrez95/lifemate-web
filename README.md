@@ -49,6 +49,8 @@ To enable automatic preview deployment for the preview branch, configure these G
 
 Without them, the preview deployment workflow exits without deploying and reports that credentials are missing.
 
+The root path redirect (`/` → `/fa`) is handled by Next configuration. Protective-domain 301 redirects for `lifematefamily.ir` and `lifemateone.ir` are intentionally deferred to Cloudflare Redirect Rules until production is explicitly approved.
+
 ## Public-content boundary
 
 Do not commit or publish:
