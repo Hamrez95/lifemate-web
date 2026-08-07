@@ -1,12 +1,7 @@
-# Preview branch
+# LifeMate Preview
 
-This branch is the persistent staging/preview environment for LifeMate website changes.
+Canonical development branch: `preview`.
 
-Workflow:
-1. Implement and review changes on `preview`.
-2. Cloudflare builds this non-production branch as a preview version.
-3. Verify the site using the generated preview URL.
-4. After approval, open a PR from `preview` to `main`.
-5. Merge only approved changes to production.
+Cloudflare automatically creates the non-production preview from this branch. Production remains `main` and must not be changed without explicit approval.
 
-Preview pipeline refreshed after enabling `wrangler versions upload` for non-production builds.
+Current preview: redesigned static landing page with responsive layout, Persian/English toggle, light/dark theme, WellMate/CareMate product positioning, consent/trust sections, and coming-soon downloads.
