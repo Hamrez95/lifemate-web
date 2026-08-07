@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
   images: { formats: ["image/avif", "image/webp"], unoptimized: true },
+  async redirects() {
+    return [{ source: "/", destination: "/fa", permanent: false }];
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   }
