@@ -1,108 +1,191 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" data-theme="light">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>LifeMate | سلامت و مراقبت، در کنار هم</title>
-  <meta name="description" content="LifeMate یک تجربه ساده و متصل برای مدیریت سلامت روزمره و مراقبت خانوادگی است؛ WellMate برای فرد و CareMate برای خانواده و مراقب.">
-  <meta name="theme-color" content="#f7faf8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>LifeMate | سلامت و مراقبت، کنار هم</title>
+  <meta name="description" content="LifeMate اکوسیستم سلامت خانوادگی با دو محصول WellMate و CareMate؛ برای مدیریت سلامت روزمره و مراقبت آرام‌تر با رضایت و کنترل کاربر.">
+  <meta name="theme-color" content="#f7fbfa">
   <link rel="canonical" href="https://mylifemate.ir/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fa_IR">
-  <meta property="og:title" content="LifeMate | سلامت و مراقبت، در کنار هم">
-  <meta property="og:description" content="دو تجربه متصل برای سلامت فرد و آرامش خاطر خانواده.">
-  <meta property="og:url" content="https://mylifemate.ir/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
   <script defer src="/script.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">رفتن به محتوای اصلی</a>
-  <header class="header" data-header>
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="LifeMate"><span class="brandmark"><i></i><i></i></span><b>LifeMate</b></a>
-      <nav class="navlinks" aria-label="ناوبری اصلی">
-        <a href="#products">محصول</a><a href="#how">چطور کار می‌کند</a><a href="#families">برای خانواده‌ها</a><a href="#trust">حریم خصوصی</a>
+  <header class="site-header" data-header>
+    <div class="wrap nav-shell">
+      <a class="brand" href="#home" aria-label="LifeMate Home"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><b>LifeMate</b></a>
+      <nav class="desktop-nav" aria-label="ناوبری اصلی">
+        <a href="#home" data-i18n="navHome">خانه</a>
+        <a href="#ecosystem" data-i18n="navEco">اکوسیستم</a>
+        <a href="#wellmate">WellMate</a>
+        <a href="#caremate">CareMate</a>
+        <a href="#story" data-i18n="navStory">داستان ما</a>
+        <a href="#contact" data-i18n="navContact">تماس</a>
       </nav>
-      <a class="btn btn-ghost navcta" href="mailto:Hamidrezapakpour95@gmail.com?subject=LifeMate%20Early%20Access">ارتباط با ما</a>
-      <button class="menubtn" type="button" aria-label="باز کردن منو" aria-expanded="false" data-menu><span></span><span></span><span></span></button>
+      <div class="nav-actions">
+        <button class="lang-btn" type="button" data-lang aria-label="تغییر زبان">FA</button>
+        <button class="theme-btn" type="button" data-theme-toggle aria-label="تغییر حالت نمایش"><span class="sun">☀</span><span class="moon">☾</span></button>
+        <button class="download-btn" type="button" data-download-open><span data-i18n="downloadApp">دانلود اپ</span><b>↓</b></button>
+        <button class="menu-btn" type="button" data-menu aria-label="باز کردن منو" aria-expanded="false"><i></i><i></i><i></i></button>
+      </div>
     </div>
-    <div class="mobilemenu" data-mobile hidden><div class="wrap"><a href="#products">محصول</a><a href="#how">چطور کار می‌کند</a><a href="#families">برای خانواده‌ها</a><a href="#trust">حریم خصوصی</a><a class="btn btn-dark" href="mailto:Hamidrezapakpour95@gmail.com?subject=LifeMate%20Early%20Access">ارتباط با ما</a></div></div>
+    <div class="mobile-menu" data-mobile hidden>
+      <div class="wrap">
+        <a href="#home" data-i18n="navHome">خانه</a><a href="#ecosystem" data-i18n="navEco">اکوسیستم</a><a href="#wellmate">WellMate</a><a href="#caremate">CareMate</a><a href="#story" data-i18n="navStory">داستان ما</a><a href="#contact" data-i18n="navContact">تماس</a>
+      </div>
+    </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="blob b1"></div><div class="blob b2"></div>
+    <section class="hero" id="home">
+      <div class="orb orb-a"></div><div class="orb orb-b"></div><div class="hero-grid-dots"></div>
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow"><i></i> اکوسیستم سلامت و مراقبت خانوادگی</span>
-          <h1>سلامتی وقتی ساده‌تر می‌شود که <em>تنها نباشی.</em></h1>
-          <p>LifeMate سلامت روزمره را به مراقبت خانواده وصل می‌کند؛ یک تجربه برای مدیریت بهتر زندگی، و یک تجربه برای آرامش خاطر کسانی که دوستت دارند.</p>
-          <div class="actions"><a class="btn btn-dark" href="#products">LifeMate را ببین</a><a class="arrowlink" href="#how">چطور کار می‌کند ←</a></div>
-          <div class="proof"><span>ساده و قابل فهم</span><span>متصل برای خانواده</span><span>طراحی‌شده برای زندگی واقعی</span></div>
+          <span class="eyebrow"><i>♥</i><span data-i18n="eyebrow">زندگی سالم‌تر، با هم</span></span>
+          <h1><span data-i18n="hero1">دیگه سلامتی خودت</span><br><span data-i18n="hero2">و عزیزانت،</span> <em data-i18n="hero3">تو مشتته.</em></h1>
+          <p data-i18n="heroText">LifeMate پلی هوشمند بین سلامت خودت و کسانی است که دوستشان داری؛ بدون نگرانی اضافه، فقط با همراهی، یادآوری و مراقبت به‌موقع.</p>
+          <div class="hero-actions">
+            <button class="download-btn large" type="button" data-download-open><span data-i18n="downloadApp">دانلود اپ</span><b>↓</b></button>
+            <a class="ghost-btn" href="#how"><span data-i18n="howWorks">چطور کار می‌کند؟</span><b>◁</b></a>
+          </div>
+          <div class="family-row">
+            <div class="avatar-stack"><span>م</span><span>ح</span><span>ر</span><span>ف</span><i>＋</i></div>
+            <small data-i18n="familyNote">مناسب برای تمام اعضای خانواده</small>
+          </div>
         </div>
 
-        <div class="phones reveal" aria-label="نمای مفهومی WellMate و CareMate">
-          <div class="ring r1"></div><div class="ring r2"></div>
-          <article class="phone well">
-            <div class="notch"></div>
-            <div class="apphead"><span class="appicon green">W</span><div><b>WellMate</b><small>سلامت من</small></div><i class="online green-dot"></i></div>
-            <div class="hello">صبح بخیر 👋</div>
-            <div class="dose"><span class="clock">۸:۳۰</span><div><small>یادآوری بعدی</small><b>داروی صبح</b><small>بعد از صبحانه</small></div></div>
-            <div class="done">انجام شد ✓</div>
-            <div class="minirow"><span>♡</span><div><b>حال امروز</b><small>ثبت یک دقیقه‌ای</small></div><i>‹</i></div>
-            <div class="minirow"><span>＋</span><div><b>برنامه سلامت</b><small>مرتب و یک‌جا</small></div><i>‹</i></div>
+        <div class="hero-visual reveal" aria-label="نمای مفهومی WellMate و CareMate">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <article class="phone phone-well">
+            <div class="island"></div>
+            <div class="phone-head"><span class="mini-avatar green">●</span><div><small>WellMate</small><b data-i18n="wellHeader">سلامت یار</b></div><span>⋮</span></div>
+            <div class="month-row"><b data-i18n="month">مرداد ۱۴۰۵</b><span>‹ ›</span></div>
+            <div class="calendar-mini"><b>ش</b><b>ی</b><b>د</b><b>س</b><b>چ</b><b>پ</b><b>ج</b><span>۱۰</span><span>۱۱</span><span>۱۲</span><span class="today">۱۳</span><span>۱۴</span><span>۱۵</span><span>۱۶</span></div>
+            <div class="app-card"><span class="pill-icon">💊</span><div><small data-i18n="nextReminder">یادآوری بعدی</small><b data-i18n="vitamin">ویتامین بی</b></div><time>08:00</time></div>
+            <div class="app-card"><span class="pill-icon blue">🩺</span><div><small data-i18n="appointment">ویزیت</small><b data-i18n="cardiology">متخصص قلب</b></div><time>13:30</time></div>
+            <div class="app-nav"><b>⌂</b><span>▦</span><span>♡</span><span>☷</span></div>
           </article>
-          <span class="sync"><i></i> همگام <i></i></span>
-          <article class="phone care">
-            <div class="notch"></div>
-            <div class="apphead"><span class="appicon blue">C</span><div><b>CareMate</b><small>مراقبت خانواده</small></div><i class="online blue-dot"></i></div>
-            <div class="family"><span>م</span><div><small>مامان</small><b>برنامه صبح انجام شد</b></div><i>✓</i></div>
-            <div class="score"><div><small>امروز</small><b>همه‌چیز خوبه</b></div><span>۹۲٪</span></div>
-            <div class="timeline"><div><i></i><span>داروی صبح</span><b>انجام شد</b></div><div><i></i><span>اندازه‌گیری روزانه</span><b>بعدی</b></div></div>
+
+          <article class="phone phone-care">
+            <div class="island"></div>
+            <div class="phone-head"><span class="mini-avatar blue">♥</span><div><small>CareMate</small><b data-i18n="careHeader">مراقب</b></div><span>⋮</span></div>
+            <div class="person-card"><span class="person-face">ح</span><div><small data-i18n="yourLovedOne">عزیز شما</small><b data-i18n="personName">حمیدرضا</b></div><i></i></div>
+            <div class="care-summary"><small data-i18n="todayStatus">وضعیت امروز</small><div><span>✓</span><b data-i18n="allGood">همه چیز خوبه</b></div></div>
+            <div class="app-card"><span class="pill-icon">💊</span><div><small data-i18n="morningDose">داروی صبح</small><b data-i18n="done">انجام شد</b></div><time>08:00</time></div>
+            <div class="app-card"><span class="pill-icon heart">♡</span><div><small data-i18n="mood">حال امروز</small><b data-i18n="calm">آرام</b></div><span class="ok">✓</span></div>
+            <div class="app-nav"><b>⌂</b><span>♙</span><span>♡</span><span>▦</span></div>
           </article>
+
+          <img class="mascot mascot-well" src="/assets/images/wellmate.webp" alt="کاراکتر WellMate">
+          <img class="mascot mascot-care" src="/assets/images/caremate.svg" alt="کاراکتر CareMate">
+          <div class="float-card float-vit"><span>💊</span><div><small data-i18n="vitamin">ویتامین بی</small><b>08:00</b></div></div>
+          <div class="float-card float-heart"><span>♡</span><div><small data-i18n="yourLovedOne">عزیز شما</small><b data-i18n="allGood">همه چیز خوبه</b></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section white" id="products">
+    <section class="intro-panel section-pad" id="how">
       <div class="wrap">
-        <div class="heading center reveal"><span class="kicker">دو تجربه، یک ارتباط</span><h2>هرکس چیزی را می‌بیند که برای او مهم است.</h2><p>به‌جای یک اپ شلوغ برای همه، LifeMate تجربه فرد و مراقب را جدا می‌کند؛ اما اطلاعات ضروری را در یک جریان ساده و متصل کنار هم نگه می‌دارد.</p></div>
-        <div class="product-grid">
-          <article class="product well-card reveal"><div class="product-top"><span class="pill green-pill">WellMate</span><span>01</span></div><div class="stack green-stack"><i>＋</i><i>✓</i><i>♡</i></div><h3>برای خودِ من</h3><p>یک همراه ساده برای برنامه‌های سلامت، یادآوری‌ها و ثبت کارهای روزمره؛ بدون پیچیدگی اضافه.</p><ul><li>برنامه روزانه سلامت و درمان</li><li>یادآوری‌های قابل فهم</li><li>ثبت سریع و کم‌اصطکاک</li></ul></article>
-          <article class="product care-card reveal"><div class="product-top"><span class="pill blue-pill">CareMate</span><span>02</span></div><div class="stack blue-stack"><i>♡</i><i>◌</i><i>✓</i></div><h3>برای کسی که کنارم است</h3><p>نمایی روشن از وضعیت فرد عزیز، برای اینکه خانواده بداند چه زمانی همه‌چیز خوب است و چه زمانی باید پیگیری کند.</p><ul><li>مشاهده وضعیت‌های مهم</li><li>پیگیری بدون مزاحمت مداوم</li><li>ارتباط نزدیک‌تر و آرام‌تر</li></ul></article>
+        <div class="intro-shell reveal">
+          <div class="intro-quote"><span class="soft-dot"></span><div><h2 data-i18n="distanceTitle">گاهی فاصله فقط چند کیلومتر نیست.</h2><p data-i18n="distanceText">شاید نزدیک هم باشیم، اما ندانیم دارو خورده شده یا حال عزیزمان چطور است. LifeMate این فاصله را کمتر می‌کند؛ بدون دخالت، با احترام.</p></div></div>
+          <div class="question-flow">
+            <div><span>⌂</span><b data-i18n="smallWorry">نگرانی‌های کوچک</b><small data-i18n="smallWorry2">که در دل می‌مانند</small></div><i>···›</i>
+            <div><span>?</span><b data-i18n="simpleQuestion">یک سؤال ساده</b><small data-i18n="simpleQuestion2">چرا همیشه نگران باشیم؟</small></div><i>···›</i>
+            <div><span>✦</span><b data-i18n="betterExperience">تجربه بهتر</b><small data-i18n="betterExperience2">همراهی، نه کنترل</small></div><i>···›</i>
+            <div><span class="tiny-brand"><u></u><u></u></span><b>LifeMate</b><small data-i18n="result">نتیجه</small></div>
+          </div>
+        </div>
+
+        <div class="steps-heading reveal"><h2 data-i18n="threeSteps">سه قدم ساده برای آرامش بیشتر</h2></div>
+        <div class="steps-grid">
+          <article class="step-card reveal"><span class="step-no green">۱</span><div class="step-icon green">☷</div><h3 data-i18n="step1">سلامت خودت را ثبت کن</h3><p data-i18n="step1Text">یادآوری داروها، علائم و گزارش‌های دوره‌ای را مرتب و در دسترس نگه دار.</p></article>
+          <article class="step-card reveal"><span class="step-no blue">۲</span><div class="step-icon blue">♟</div><h3 data-i18n="step2">عزیزانت را اضافه کن</h3><p data-i18n="step2Text">فقط کسانی را که به آن‌ها اعتماد داری با سطح دسترسی مشخص دعوت کن.</p></article>
+          <article class="step-card reveal"><span class="step-no purple">۳</span><div class="step-icon purple">♡</div><h3 data-i18n="step3">از عزیزانت مراقبت کن</h3><p data-i18n="step3Text">در زمان مناسب وضعیت آن‌ها را ببین و اگر لازم بود پیگیری کن.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section soft" id="families">
+    <section class="products section-pad" id="products">
+      <div class="wrap product-grid">
+        <article class="product-panel well-panel reveal" id="wellmate">
+          <div class="panel-copy">
+            <span class="product-kicker well">WellMate</span><h2 data-i18n="wellTitle">سلامت یار</h2><p data-i18n="wellSubtitle">بهترین همراه سلامت شما</p>
+            <ul><li data-i18n="wellF1">یادآوری هوشمند داروها و مکمل‌ها</li><li data-i18n="wellF2">ثبت علائم، فشارخون و وزن</li><li data-i18n="wellF3">گزارش‌های ساده و قابل فهم</li><li data-i18n="wellF4">تقویم سلامت و پیگیری برنامه‌ها</li></ul>
+            <a href="#ecosystem" class="panel-link" data-i18n="seeWell">بیشتر درباره سلامت یار</a>
+          </div>
+          <div class="panel-visual"><div class="mini-phone green-mini"><span>سلامت یار</span><b>۱۳</b><small>مرداد</small><i>✓ برنامه امروز</i></div><img src="/assets/images/wellmate.webp" alt="WellMate"></div>
+        </article>
+        <article class="product-panel care-panel reveal" id="caremate">
+          <div class="panel-copy">
+            <span class="product-kicker care">CareMate</span><h2 data-i18n="careTitle">مراقب</h2><p data-i18n="careSubtitle">همراهی برای عزیزانت، با احترام</p>
+            <ul><li data-i18n="careF1">دیدن خلاصه روز عزیزان</li><li data-i18n="careF2">یادآوری و وضعیت مصرف دارو</li><li data-i18n="careF3">هشدارهای مهم و به‌موقع</li><li data-i18n="careF4">گزارش سلامت خانوادگی</li></ul>
+            <a href="#ecosystem" class="panel-link" data-i18n="seeCare">بیشتر درباره مراقب</a>
+          </div>
+          <div class="panel-visual"><div class="mini-phone blue-mini"><span>مراقب</span><b>✓</b><small data-i18n="allGood">همه چیز خوبه</small><i>♡ حال امروز</i></div><img src="/assets/images/caremate.svg" alt="CareMate"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ecosystem section-pad" id="ecosystem">
       <div class="wrap">
-        <div class="heading split reveal"><div><span class="kicker">مراقبت، بدون پیچیدگی</span><h2>برای روزهایی که زندگی خودش به‌اندازه کافی شلوغ است.</h2></div><p>LifeMate برای جایگزین کردن رابطه انسانی ساخته نشده؛ برای کم کردن فراموشی، ابهام و پیگیری‌های تکراری ساخته شده تا وقت بیشتری برای خودِ رابطه بماند.</p></div>
-        <div class="features"><article class="reveal"><span>◷</span><h3>یادآوری هوشمند</h3><p>برنامه‌های مهم در زمان مناسب، با تجربه‌ای آرام و قابل فهم.</p></article><article class="reveal"><span>⇄</span><h3>مراقبت متصل</h3><p>وضعیت‌های ضروری میان فرد و خانواده به شکل روشن همگام می‌شوند.</p></article><article class="reveal"><span>◎</span><h3>یک نگاه روشن</h3><p>اطلاعات روزمره به‌جای پراکندگی، در یک جریان ساده دیده می‌شوند.</p></article><article class="reveal"><span>♡</span><h3>انسان‌محور</h3><p>تمرکز بر آرامش، سادگی و استفاده راحت برای طیف گسترده‌ای از کاربران.</p></article></div>
+        <div class="section-head reveal"><span class="kicker" data-i18n="ecoKicker">یک ارتباط، دو تجربه</span><h2 data-i18n="ecoTitle">اتصال، با اجازه و احترام</h2><p data-i18n="ecoText">LifeMate خودش یک اپ دانلودی نیست؛ لایه ارتباطی بین WellMate و CareMate است تا داده لازم، فقط با رضایت کاربر و در زمان مناسب به اشتراک گذاشته شود.</p></div>
+        <div class="connection-card reveal">
+          <div class="connection-node well-node"><div class="mini-state"><span>💊</span><b data-i18n="vitamin">ویتامین بی</b><small>08:00</small></div><strong>WellMate</strong><small data-i18n="personalSpace">فضای سلامت شخصی</small></div>
+          <div class="connection-line green-line"><i></i><i></i><i></i></div>
+          <div class="life-core"><span class="big-brand"><i></i><i></i></span><b>LifeMate</b><small data-i18n="secureLayer">لایه ارتباطی امن و هوشمند</small></div>
+          <div class="connection-line blue-line"><i></i><i></i><i></i></div>
+          <div class="connection-node care-node"><div class="mini-state"><span>✓</span><b data-i18n="morningDose">داروی صبح</b><small data-i18n="done">انجام شد</small></div><strong>CareMate</strong><small data-i18n="familySpace">برای عزیزان شما</small></div>
+        </div>
+
+        <div class="trust-strip reveal">
+          <div><span>◈</span><b data-i18n="control">شفاف و قابل کنترل</b><small data-i18n="controlText">هر لحظه می‌دانی چه چیزی به اشتراک گذاشته می‌شود.</small></div>
+          <div><span>▣</span><b data-i18n="privacy">احترام به حریم خصوصی</b><small data-i18n="privacyText">دسترسی‌ها با رضایت و سطح‌بندی مشخص هستند.</small></div>
+          <div><span>♙</span><b data-i18n="decision">شما تصمیم می‌گیرید</b><small data-i18n="decisionText">چه کسی، چه چیزی را و تا چه زمانی ببیند.</small></div>
+        </div>
       </div>
     </section>
 
-    <section class="section white" id="how">
-      <div class="wrap how-grid">
-        <div class="how-copy reveal"><span class="kicker">چطور کار می‌کند؟</span><h2>سه قدم کوتاه برای یک مراقبت آرام‌تر.</h2><p>از برنامه شخصی شروع می‌کنیم، ارتباط را فقط با رضایت کاربر می‌سازیم و بعد اطلاعات ضروری در تجربه‌ای متناسب با هر نقش نمایش داده می‌شود.</p><div class="steps"><div><span>۱</span><p><b>برنامه‌ات را بساز</b><small>کارهای مهم روزانه را در WellMate مرتب کن.</small></p></div><div><span>۲</span><p><b>فرد مورد اعتمادت را وصل کن</b><small>کنترل ارتباط و دسترسی از سمت کاربر است.</small></p></div><div><span>۳</span><p><b>با خیال راحت ادامه بده</b><small>CareMate فقط چیزی را نشان می‌دهد که برای مراقبت لازم است.</small></p></div></div></div>
-        <div class="connect reveal" aria-hidden="true"><div class="node n1"><span>م</span><b>WellMate</b><small>برنامه شخصی</small></div><div class="line l1"></div><div class="core"><span class="brandmark big"><i></i><i></i></span><b>LifeMate</b><small>ارتباط امن و شفاف</small></div><div class="line l2"></div><div class="node n2"><span>ح</span><b>CareMate</b><small>نمای مراقب</small></div></div>
-      </div>
-    </section>
-
-    <section class="section white compact"><div class="wrap"><div class="audience reveal"><div><span class="kicker">طراحی برای زندگی واقعی</span><h2>از استقلال فرد تا آرامش خانواده.</h2><p>چه در مدیریت یک برنامه روزمره سلامت، چه در مراقبت از یک عضو خانواده، LifeMate قرار است حس کنترل و اطمینان بیشتری ایجاد کند؛ نه بار کاری بیشتر.</p></div><div class="chips"><span>خانواده‌ها</span><span>سالمندان</span><span>بیماران مزمن</span><span>افراد پرمشغله</span><span>مراقبان</span></div></div></div></section>
-
-    <section class="section soft" id="trust">
+    <section class="trust section-pad" id="trust">
       <div class="wrap trust-grid">
-        <div class="trust-art reveal"><div class="shieldbox"><span>✓</span><b>اعتماد از طراحی شروع می‌شود</b><small>دسترسی شفاف، ارتباط مبتنی بر رضایت و حداقل‌سازی داده</small></div><i class="tag t1">رضایت کاربر</i><i class="tag t2">دسترسی کنترل‌شده</i><i class="tag t3">حریم خصوصی</i></div>
-        <div class="trust-copy reveal"><span class="kicker">حریم خصوصی و اعتماد</span><h2>مراقبت خوب، بدون مرزهای روشن ممکن نیست.</h2><p>LifeMate از ابتدا بر پایه دسترسی روشن، رضایت کاربر و نمایش حداقل اطلاعات لازم طراحی می‌شود. ارتباط خانوادگی باید حس امنیت ایجاد کند، نه حس نظارت دائمی.</p><div class="trustpoints"><div><span>✓</span><p><b>کنترل دسترسی</b><small>کاربر می‌داند چه کسی به چه چیزی دسترسی دارد.</small></p></div><div><span>✓</span><p><b>شفافیت داده</b><small>اطلاعات سلامت فقط برای تجربه و هدف مشخص استفاده می‌شود.</small></p></div><div><span>✓</span><p><b>مرز پزشکی روشن</b><small>LifeMate جایگزین پزشک، تشخیص یا خدمات اورژانسی نیست.</small></p></div></div></div>
+        <div class="shield-art reveal"><div class="shield"><span>♡</span></div><span class="lock-bubble">▣</span><span class="heart-bubble">♥</span></div>
+        <div class="trust-copy reveal"><span class="kicker" data-i18n="privacyKicker">حریم خصوصی از اول طراحی شده</span><h2 data-i18n="trustTitle">اعتماد، پایه همه چیز است.</h2><p data-i18n="trustText">LifeMate برای کنترل کردن ساخته نشده؛ برای کم‌کردن نگرانی و بهتر کردن ارتباط ساخته شده. انتخاب و تغییر دسترسی همیشه دست خود کاربر می‌ماند.</p>
+          <div class="permission-list"><div><i>✓</i><span><b data-i18n="chooseCare">انتخاب مراقب</b><small data-i18n="chooseCareText">فقط کسی که خودت انتخاب می‌کنی.</small></span></div><div><i>✓</i><span><b data-i18n="chooseData">انتخاب داده</b><small data-i18n="chooseDataText">فقط اطلاعات لازم، نه همه چیز.</small></span></div><div><i>✓</i><span><b data-i18n="revoke">لغو در هر زمان</b><small data-i18n="revokeText">دسترسی همیشه قابل تغییر یا توقف است.</small></span></div></div>
+        </div>
+        <div class="consent-card reveal"><strong data-i18n="sampleConsent">اجازه اشتراک نمونه</strong><small data-i18n="consentHint">مثال نمایشی</small><label><span data-i18n="withWhom">با چه کسی؟</span><b data-i18n="personName">حمیدرضا</b></label><label><span data-i18n="whatShare">چه چیزی؟</span><b data-i18n="medSummary">داروها و خلاصه روزانه</b></label><label><span data-i18n="duration">مدت دسترسی</span><b data-i18n="days30">۳۰ روز</b></label><div class="toggle-row"><span data-i18n="active">فعال</span><i><u></u></i></div></div>
       </div>
     </section>
 
-    <section class="section white"><div class="wrap eco reveal"><div><span class="kicker light">LifeMate در حال رشد است</span><h2>یک پایه برای مراقبت خانوادگی امروز؛ یک اکوسیستم برای فردا.</h2><p>ما با دو تجربه اصلی شروع می‌کنیم و به‌تدریج مسیرهای بیشتری از زندگی و سلامت خانواده را روی همان زبان ساده، متصل و انسانی توسعه می‌دهیم.</p></div><div class="eco-orbit" aria-hidden="true"><div class="eco-core"><span class="brandmark big"><i></i><i></i></span><b>LifeMate</b></div><i></i><i></i><i></i><i></i></div></div></section>
+    <section class="story section-pad" id="story">
+      <div class="wrap story-grid">
+        <article class="story-card reveal"><img src="/assets/images/wellmate.webp" alt="WellMate"><div><span class="kicker" data-i18n="storyKicker">از یک سؤال ساده شروع شد...</span><h2 data-i18n="storyTitle">داستان LifeMate</h2><p data-i18n="storyText">ما خواستیم سلامت خودمان و عزیزان‌مان بدون استرس، پیگیری‌های تکراری و ابهام مدیریت شود؛ ساده، انسانی و قابل اعتماد.</p><a href="mailto:Hamidrezapakpour95@gmail.com?subject=LifeMate%20Story" class="panel-link" data-i18n="ourStory">داستان ما</a></div></article>
+        <article class="partner-card reveal"><div class="briefcase">▣</div><div><span class="kicker" data-i18n="partnerKicker">گفتگوی بزرگ‌تر، در فضایی امن</span><h2 data-i18n="partnerTitle">برای همکاری، سرمایه‌گذاری و رسانه</h2><p data-i18n="partnerText">اگر برای همکاری محصولی، شراکت یا گفتگوی حرفه‌ای اینجا هستید، یک مسیر خصوصی و مستقیم داریم.</p><a href="mailto:Hamidrezapakpour95@gmail.com?subject=LifeMate%20Private%20Meeting" class="ghost-btn" data-i18n="privateMeeting">درخواست جلسه خصوصی</a></div><img src="/assets/images/caremate.svg" alt="CareMate"></article>
+      </div>
+    </section>
 
-    <section class="section white cta"><div class="wrap"><div class="cta-box reveal"><span class="coming">در حال آماده‌سازی برای انتشار</span><h2>سلامت و مراقبت، این بار کنار هم.</h2><p>LifeMate در حال آماده‌شدن برای اولین کاربران است. برای همکاری، بازخورد یا اطلاع از انتشار با ما در تماس باش.</p><div class="actions center-actions"><a class="btn btn-dark" href="mailto:Hamidrezapakpour95@gmail.com?subject=LifeMate%20Early%20Access">ارتباط با LifeMate</a><a class="btn btn-ghost" href="#top">بازگشت به بالا ↑</a></div></div></div></section>
+    <section class="download-section section-pad" id="contact">
+      <div class="wrap download-card reveal">
+        <div><span class="kicker" data-i18n="soonKicker">قدم بعدی نزدیک است</span><h2 data-i18n="downloadTitle">WellMate و CareMate به‌زودی آماده تجربه می‌شوند.</h2><p data-i18n="downloadText">دانلود هر دو محصول فعلاً غیرفعال است. وقتی نسخه عمومی آماده شد، لینک‌های رسمی همین‌جا فعال می‌شوند.</p><div class="store-row"><button disabled><b>Google Play</b><small data-i18n="comingSoon">به زودی</small></button><button disabled><b>بازار</b><small data-i18n="comingSoon">به زودی</small></button><button disabled><b>مایکت</b><small data-i18n="comingSoon">به زودی</small></button></div><a class="download-btn mail" href="mailto:Hamidrezapakpour95@gmail.com?subject=LifeMate%20Early%20Access"><span data-i18n="earlyAccess">درخواست دسترسی زودهنگام</span><b>↗</b></a></div><img src="/assets/images/caremate.svg" alt="CareMate"></div>
+      </div>
+    </section>
   </main>
 
-  <footer><div class="wrap foot"><div><a class="brand" href="#top"><span class="brandmark"><i></i><i></i></span><b>LifeMate</b></a><p>اکوسیستم سلامت و مراقبت خانوادگی.</p></div><nav><a href="#products">محصول</a><a href="#how">نحوه کار</a><a href="/privacy.html">حریم خصوصی</a><a href="/terms.html">شرایط استفاده</a></nav><div class="copy">© <span data-year></span> LifeMate<br>mylifemate.ir</div></div></footer>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark"><i></i><i></i></span><b>LifeMate</b></a><p data-i18n="footerText">اکوسیستم هوشمند سلامت برای داشتن زندگی سالم‌تر، آگاهانه‌تر و متصل‌تر.</p></div>
+      <div><b data-i18n="products">محصولات</b><a href="#wellmate">WellMate</a><a href="#caremate">CareMate</a></div>
+      <div><b data-i18n="company">شرکت</b><a href="#story" data-i18n="navStory">داستان ما</a><a href="#contact" data-i18n="navContact">تماس با ما</a></div>
+      <div><b data-i18n="rules">قوانین</b><a href="/privacy.html" data-i18n="privacyPolicy">حریم خصوصی</a><a href="/terms.html" data-i18n="terms">شرایط استفاده</a></div>
+      <div><b data-i18n="newsletter">خبرنامه LifeMate</b><a href="mailto:Hamidrezapakpour95@gmail.com?subject=LifeMate%20Newsletter" class="newsletter" data-i18n="emailUs">برای عضویت ایمیل بزنید ↗</a></div>
+    </div>
+    <div class="wrap footer-bottom"><span>© <span data-year></span> LifeMate</span><span class="preview-badge">Preview</span></div>
+  </footer>
+
+  <dialog class="download-dialog" data-download-dialog>
+    <button class="dialog-close" type="button" data-download-close aria-label="بستن">×</button>
+    <div class="dialog-head"><span class="big-brand"><i></i><i></i></span><div><b data-i18n="chooseProduct">یک محصول را انتخاب کنید</b><small data-i18n="notLifeMate">LifeMate خودش دانلودی نیست؛ WellMate و CareMate دو اپلیکیشن اکوسیستم هستند.</small></div></div>
+    <div class="dialog-products"><article><img src="/assets/images/wellmate.webp" alt="WellMate"><div><b>WellMate</b><small data-i18n="wellHeader">سلامت یار</small></div><span data-i18n="comingSoon">به زودی</span></article><article><img src="/assets/images/caremate.svg" alt="CareMate"><div><b>CareMate</b><small data-i18n="careHeader">مراقب</small></div><span data-i18n="comingSoon">به زودی</span></article></div>
+  </dialog>
 </body>
 </html>
