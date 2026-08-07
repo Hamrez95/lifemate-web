@@ -13,7 +13,15 @@ const viewports = [
 async function ready(page: import("@playwright/test").Page) {
   await page.waitForLoadState("networkidle");
   await page.evaluate(() => document.fonts.ready);
-  await page.waitForFunction(() => Array.from(document.images).every((image) => image.complete));
+  await page.evaluate(async () => {
+    const max = document.documentElement.scrollHeight;
+    for (let y = 0; y < max; y += 700) {
+      window.scrollTo(0, y);
+      await new Promise((resolve) => window.setTimeout(resolve, 35));
+    }
+    window.scrollTo(0, 0);
+  });
+  await page.waitForFunction(() => Array.from(document.images).every((image) => image.complete), undefined, { timeout: 10_000 });
   await expect(page.locator("main")).toBeVisible();
   const brokenImages = await page.locator("img").evaluateAll((images) =>
     images
@@ -25,6 +33,7 @@ async function ready(page: import("@playwright/test").Page) {
 }
 
 test("capture core visual QA matrix", async ({ page }) => {
+  test.setTimeout(180_000);
   await mkdir(visualDir, { recursive: true });
   await page.emulateMedia({ reducedMotion: "reduce", colorScheme: "light" });
 
