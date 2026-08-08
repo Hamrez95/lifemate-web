@@ -10,7 +10,7 @@ Development flow:
 5. Cloudflare Workers Git integration builds non-production branches automatically.
 6. Only after explicit approval: open/merge a PR into `main`.
 
-Current V3 work branch: `refactor/lifemate-brand-ux-v2`.
-Current V3 preview sync: brand storytelling, women’s health, trust/legal redesign and responsive QA.
+Current work branch: `refactor/lifemate-brand-ux-v2`.
+Current design direction: warm consumer-health UI inspired by Impo's soft/caring/clear visual rhythm, using only LifeMate product imagery and mascots. Navy is no longer a primary brand surface; the light experience is blush/warm-white with mint, soft sky and lilac product accents. Persian typography is currently set to Estedad for preview evaluation.
 
 Important: preview/refactor intentionally carries `noindex,nofollow` in HTML, `_headers` and `robots.txt`. Remove the preview noindex controls as a deliberate production-release step before merging to `main`.
