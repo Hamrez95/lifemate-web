@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mylifemate.ir/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://mylifemate.ir/privacy.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://mylifemate.ir/terms.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://mylifemate.ir/</loc><xhtml:link rel="alternate" hreflang="fa" href="https://mylifemate.ir/"/><xhtml:link rel="alternate" hreflang="en" href="https://mylifemate.ir/en.html"/></url>
+  <url><loc>https://mylifemate.ir/en.html</loc><xhtml:link rel="alternate" hreflang="fa" href="https://mylifemate.ir/"/><xhtml:link rel="alternate" hreflang="en" href="https://mylifemate.ir/en.html"/></url>
+  <url><loc>https://mylifemate.ir/privacy.html</loc></url>
+  <url><loc>https://mylifemate.ir/privacy-en.html</loc></url>
+  <url><loc>https://mylifemate.ir/terms.html</loc></url>
+  <url><loc>https://mylifemate.ir/terms-en.html</loc></url>
 </urlset>
