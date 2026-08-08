@@ -11,5 +11,6 @@ Development flow:
 6. Only after explicit approval: open/merge a PR into `main`.
 
 Current V3 work branch: `refactor/lifemate-brand-ux-v2`.
+Current V3 preview sync: brand storytelling, women’s health, trust/legal redesign and responsive QA.
 
 Important: preview/refactor intentionally carries `noindex,nofollow` in HTML, `_headers` and `robots.txt`. Remove the preview noindex controls as a deliberate production-release step before merging to `main`.
