@@ -10,6 +10,6 @@ Development flow:
 5. Cloudflare Workers Git integration builds non-production branches automatically.
 6. Only after explicit approval: open/merge a PR into `main`.
 
-Current V2 work branch: `refactor/lifemate-brand-ux-v2`.
+Current V3 work branch: `refactor/lifemate-brand-ux-v2`.
 
-Important: V2 preview intentionally carries `noindex,nofollow` in HTML, `_headers` and `robots.txt`. Remove the preview noindex controls as a deliberate production-release step before merging to `main`.
+Important: preview/refactor intentionally carries `noindex,nofollow` in HTML, `_headers` and `robots.txt`. Remove the preview noindex controls as a deliberate production-release step before merging to `main`.
