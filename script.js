@@ -17,7 +17,7 @@
       theme.setAttribute('aria-pressed',String(dark));
       theme.setAttribute('aria-label',dark?(isFa?'فعال کردن حالت روشن':'Switch to light theme'):(isFa?'فعال کردن حالت تیره':'Switch to dark theme'));
     }
-    if(themeMeta) themeMeta.content=dark?'#132437':'#fffdf8';
+    if(themeMeta) themeMeta.content=dark?'#241d22':'#fff4f6';
   }
   setTheme(safeGet('lifemate-theme','light'));
   theme?.addEventListener('click',()=>{
