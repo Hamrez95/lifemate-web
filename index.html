@@ -43,7 +43,7 @@
       crossorigin
     />
     <link rel="stylesheet" href="/styles.css" />
-    <script defer src="/script.js"></script>
+    <script type="module" src="/script.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
@@ -98,98 +98,100 @@
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-glow hero-glow-coral" aria-hidden="true"></div>
-        <div class="hero-glow hero-glow-mint" aria-hidden="true"></div>
-        <div class="container hero-layout">
+      <section class="hero" id="top" data-hero>
+        <div class="hero-wordmark" aria-hidden="true">LifeMate</div>
+        <div class="hero-orb hero-orb-mint" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-blue" aria-hidden="true"></div>
+        <div class="container hero-intro">
           <div class="hero-copy" data-reveal>
             <p class="overline">
               <span></span> اکوسیستم سلامت و مراقبت LifeMate
             </p>
-            <h1>برای خودت، برای آدم‌های <em>مهم زندگی‌ات.</em></h1>
+            <h1>برای خودت؛ برای آدم‌های <em>مهم زندگی‌ات.</em></h1>
             <p class="hero-lead">
-              LifeMate تجربه‌های سلامت و مراقبت رو کنار هم میاره تا هم حواست به
-              خودت باشه، هم راحت‌تر کنار عزیزانت بمونی.
+              LifeMate مراقبت از خودت و همراهی با عزیزانت رو در یک تجربه‌ی ساده،
+              صمیمی و محترمانه کنار هم میاره.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#ecosystem"
-                >آشنایی با LifeMate</a
+                >LifeMate رو ببین</a
               >
               <a class="text-link" href="#products"
-                >محصولات فعلی <span aria-hidden="true">←</span></a
+                >دو همراه فعلی <span aria-hidden="true">←</span></a
               >
             </div>
-            <ul class="trust-inline">
-              <li>
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="m8 12 2.5 2.5L16 9" />
-                  <circle cx="12" cy="12" r="9" />
-                </svg>
-                انتخاب‌محور
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M12 20s-7-4.2-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 10c0 5.8-7 10-7 10Z"
-                  />
-                </svg>
-                انسانی
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 11V8a5 5 0 0 1 10 0v3M5 11h14v9H5z" />
-                </svg>
-                حریم خصوصی از ابتدا
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="hero-world"
-            role="group"
-            aria-label="LifeMate و دو محصول فعلی آن"
-            data-reveal
-          >
-            <div class="hero-shape" aria-hidden="true"></div>
-            <div class="lifemate-core">
-              <img
-                src="/assets/media/logo.webp"
-                width="220"
-                height="127"
-                alt="نشان LifeMate"
-              />
-              <strong>LifeMate</strong>
-              <span>جایی برای اینکه بیشتر حواسمون به هم باشه</span>
-            </div>
-            <article class="hero-product hero-product-well">
-              <img
-                src="/assets/media/wellmas.webp"
-                width="170"
-                height="223"
-                alt="کاراکتر سبز WellMate"
-              />
-              <div>
-                <strong>WellMate</strong><span>حواسش به سلامت توئه</span>
-              </div>
-            </article>
-            <article class="hero-product hero-product-care">
-              <img
-                src="/assets/media/caremas.webp"
-                width="153"
-                height="225"
-                alt="کاراکتر آبی CareMate"
-              />
-              <div>
-                <strong>CareMate</strong
-                ><span>کمکت می‌کنه کنار عزیزانت باشی</span>
-              </div>
-            </article>
-            <span class="spark spark-one" aria-hidden="true">✦</span
-            ><span class="spark spark-two" aria-hidden="true">●</span
-            ><span class="spark spark-three" aria-hidden="true">✦</span>
           </div>
         </div>
-        <div class="hero-wave" aria-hidden="true"></div>
+        <div class="hero-stage" data-hero-stage>
+          <img
+            class="hero-ribbon"
+            src="/assets/media/cinematic/connection-ribbon.webp"
+            width="1774" height="887"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="mascot-wrap mascot-wrap-well" data-depth="1.3">
+            <span class="mascot-label"
+              ><strong>WellMate</strong> هوای خودت رو داره</span
+            >
+            <img
+              src="/assets/media/cinematic/wellmate-mascot.webp"
+              width="1254" height="1254"
+              alt="کاراکتر سبز و بانمک WellMate"
+            />
+          </div>
+          <div class="product-phone" data-depth="0.65">
+            <span class="phone-speaker" aria-hidden="true"></span>
+            <div class="phone-screen">
+              <div class="phone-top"><span>۹:۴۱</span><b>•••</b></div>
+              <div class="phone-greeting">
+                <span>امروز</span><strong>برنامه‌ی سلامت من</strong>
+              </div>
+              <div class="phone-progress">
+                <span></span><small>۳ از ۵ انجام شده</small>
+              </div>
+              <div class="phone-task is-done">
+                <i>✓</i><span><b>داروی صبح</b><small>۸:۰۰</small></span>
+              </div>
+              <div class="phone-task">
+                <i>+</i><span><b>مکمل روزانه</b><small>۱۲:۳۰</small></span>
+              </div>
+              <div class="phone-task">
+                <i>+</i
+                ><span><b>۲۰ دقیقه پیاده‌روی</b><small>امروز</small></span>
+              </div>
+              <div class="phone-nav" aria-hidden="true">
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+          </div>
+          <div class="mascot-wrap mascot-wrap-care" data-depth="1.05">
+            <span class="mascot-label"
+              ><strong>CareMate</strong> کنار عزیزاته</span
+            >
+            <img
+              src="/assets/media/cinematic/caremate-mascot.webp"
+              width="1254" height="1254"
+              alt="کاراکتر آبی و بانمک CareMate"
+            />
+          </div>
+          <span class="hero-doodle hero-doodle-one" aria-hidden="true">✦</span>
+          <span class="hero-doodle hero-doodle-two" aria-hidden="true">⌁</span>
+        </div>
+        <ul class="container hero-principles" data-reveal>
+          <li>
+            <span>01</span><strong>انتخاب با توئه</strong
+            ><small>هر ارتباطی با رضایت تو شروع می‌شه.</small>
+          </li>
+          <li>
+            <span>02</span><strong>مثل یک همراه واقعی</strong
+            ><small>ساده، انسانی و بدون قضاوت.</small>
+          </li>
+          <li>
+            <span>03</span><strong>حریم خصوصی از اول</strong
+            ><small>اطلاعاتت همیشه در کنترل خودته.</small>
+          </li>
+        </ul>
       </section>
 
       <section class="ecosystem-intro" id="ecosystem">
@@ -209,7 +211,10 @@
             خانواده می‌تونه با نیازهای تازه، قدم‌به‌قدم بزرگ‌تر بشه.
           </p>
         </div>
-        <div class="container product-bridge" id="products" data-reveal>
+        <div class="container ecosystem-stage" id="products" data-reveal>
+          <div class="ecosystem-routes" aria-hidden="true">
+            <span></span><span></span>
+          </div>
           <article class="bridge-product bridge-well">
             <span class="product-icon"
               ><svg viewBox="0 0 24 24" aria-hidden="true">
@@ -228,13 +233,13 @@
               >بیشتر <span aria-hidden="true">←</span></a
             >
           </article>
-          <div class="bridge-center" aria-hidden="true">
+          <div class="bridge-center">
             <img
               src="/assets/media/logo.webp"
               width="220"
               height="127"
-              alt=""
-            /><span></span>
+              alt="نشان LifeMate"
+            /><strong>LifeMate</strong><small>یک خانه، دو همراه</small>
           </div>
           <article class="bridge-product bridge-care">
             <span class="product-icon"
@@ -256,6 +261,22 @@
               >بیشتر <span aria-hidden="true">←</span></a
             >
           </article>
+          <img
+            class="ecosystem-mascot ecosystem-mascot-well"
+            src="/assets/media/cinematic/wellmate-mascot.webp"
+            width="1254" height="1254"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
+          <img
+            class="ecosystem-mascot ecosystem-mascot-care"
+            src="/assets/media/cinematic/caremate-mascot.webp"
+            width="1254" height="1254"
+            alt=""
+            aria-hidden="true"
+            loading="lazy"
+          />
         </div>
       </section>
 
@@ -273,9 +294,8 @@
             />
             <img
               class="story-mascot"
-              src="/assets/media/wellmas.webp"
-              width="170"
-              height="223"
+              src="/assets/media/cinematic/wellmate-mascot.webp"
+              width="1254" height="1254"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -390,9 +410,8 @@
             />
             <img
               class="story-mascot"
-              src="/assets/media/caremas.webp"
-              width="153"
-              height="225"
+              src="/assets/media/cinematic/caremate-mascot.webp"
+              width="1254" height="1254"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -587,9 +606,8 @@
             ><span><strong>مایکت</strong><em>به‌زودی</em></span>
           </div>
           <img
-            src="/assets/media/caremas.webp"
-            width="153"
-            height="225"
+            src="/assets/media/cinematic/caremate-mascot.webp"
+            width="1254" height="1254"
             alt=""
             aria-hidden="true"
             loading="lazy"
