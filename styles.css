@@ -2299,7 +2299,7 @@ body {
   z-index: 10;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  padding-top: 50px;
+  padding-top: 0;
 }
 [dir="rtl"] .hero-intro .hero-copy {
   grid-column: 9/13;
@@ -2445,7 +2445,7 @@ body {
   transform: rotate(5deg);
 }
 .mascot-label strong {
-  display: block;
+  display: none;
   direction: ltr;
   color: var(--text-primary);
   font-size: 15px;
