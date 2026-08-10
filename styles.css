@@ -3357,3 +3357,134 @@ body {
     transform: translateX(-50%) !important;
   }
 }
+
+/* Responsive QA fixes: keep RTL copy, artwork and product shots fully visible. */
+.hero-intro {
+  direction: ltr;
+}
+[dir="rtl"] .hero-intro .hero-copy {
+  direction: rtl;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+[dir="ltr"] .hero-intro .hero-copy {
+  direction: ltr;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+.hero-principles li {
+  min-width: 0;
+}
+.hero-principles strong {
+  display: block;
+  min-width: 0;
+  padding-block: 2px;
+  line-height: 1.6;
+}
+.app-screen,
+.women-product-shot {
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-bottom: 102px;
+  }
+  .hero-stage {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 465px;
+    transform: none;
+  }
+  .hero-ribbon {
+    width: 165%;
+    bottom: 10px;
+  }
+  .mascot-wrap-well {
+    left: 0;
+    bottom: 28px;
+    width: min(42vw, 205px);
+  }
+  .mascot-wrap-care {
+    right: 0;
+    bottom: 14px;
+    width: min(42vw, 205px);
+  }
+  .product-phone {
+    left: 50%;
+    bottom: 37px;
+    width: min(41vw, 175px);
+    height: min(86vw, 365px);
+  }
+  .hero-principles {
+    width: min(var(--container), calc(100% - 30px));
+    margin: -10px auto 0;
+  }
+  .hero-principles li {
+    grid-template-columns: max-content minmax(0, 1fr);
+    padding-inline: 16px;
+  }
+  .ecosystem-stage .bridge-center {
+    transform: translateX(-50%);
+  }
+  .ecosystem-stage .bridge-center img {
+    transform: none;
+  }
+  .story-visual {
+    min-height: 520px;
+  }
+  .portrait-screen {
+    width: min(76vw, 300px);
+  }
+  .square-screen {
+    width: min(100%, 390px);
+  }
+  .women-visual {
+    min-height: auto;
+    padding-block: 18px 28px;
+  }
+  .women-visual > img {
+    width: min(100%, 420px);
+    max-height: none;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-stage {
+    height: 430px;
+  }
+  .mascot-wrap-well,
+  .mascot-wrap-care {
+    width: 40vw;
+  }
+  .product-phone {
+    width: 40vw;
+    height: 83vw;
+  }
+  .story-visual {
+    min-height: 485px;
+  }
+  .portrait-screen {
+    width: min(78vw, 285px);
+  }
+  .story-visual .story-mascot {
+    height: 145px !important;
+    max-width: 145px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-stage {
+    height: 400px;
+  }
+  .hero-principles {
+    width: calc(100% - 24px);
+  }
+  .story-visual {
+    min-height: 450px;
+  }
+}
