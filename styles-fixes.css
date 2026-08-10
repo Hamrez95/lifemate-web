@@ -71,3 +71,28 @@ select {
     justify-content: flex-start;
   }
 }
+
+/* Keep the English LifeMate ecosystem badge visually centered on mobile. */
+@media (max-width: 700px) {
+  [dir="ltr"] .ecosystem-stage .bridge-center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  [dir="ltr"] .ecosystem-stage .bridge-center strong {
+    width: 100%;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 2px;
+  }
+
+  [dir="ltr"] .ecosystem-stage .bridge-center small {
+    display: block;
+    width: 100%;
+    max-width: 96px;
+    margin-top: 4px;
+    text-align: center;
+    line-height: 1.35;
+  }
+}
