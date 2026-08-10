@@ -1,0 +1,74 @@
+name: Productionize release
+
+on:
+  push:
+    branches:
+      - release/website-production-2026-08-10
+
+permissions:
+  contents: write
+
+jobs:
+  productionize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release branch
+        uses: actions/checkout@v4
+        with:
+          ref: release/website-production-2026-08-10
+          fetch-depth: 0
+
+      - name: Remove preview-only indexing guards
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          html_files = [
+              "index.html",
+              "en.html",
+              "privacy.html",
+              "privacy-en.html",
+              "terms.html",
+              "terms-en.html",
+          ]
+
+          robots_meta = re.compile(
+              r'<meta\s+name=["\']robots["\']\s+content=["\']noindex,nofollow["\']\s*/?>',
+              re.IGNORECASE,
+          )
+
+          for filename in html_files:
+              path = Path(filename)
+              text = path.read_text(encoding="utf-8")
+              updated, count = robots_meta.subn("", text)
+              if count != 1:
+                  raise SystemExit(f"Expected exactly one preview robots meta in {filename}, found {count}")
+              path.write_text(updated, encoding="utf-8")
+
+          headers = Path("_headers")
+          header_text = headers.read_text(encoding="utf-8")
+          preview_header = "  X-Robots-Tag: noindex, nofollow\n"
+          if preview_header not in header_text:
+              raise SystemExit("Preview X-Robots-Tag guard was not found in _headers")
+          headers.write_text(header_text.replace(preview_header, ""), encoding="utf-8")
+
+          Path("robots.txt").write_text(
+              "User-agent: *\nAllow: /\n\nSitemap: https://mylifemate.ir/sitemap.xml\n",
+              encoding="utf-8",
+          )
+
+          workflow = Path(".github/workflows/productionize-release.yml")
+          if workflow.exists():
+              workflow.unlink()
+          PY
+
+      - name: Commit production-safe release
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html en.html privacy.html privacy-en.html terms.html terms-en.html _headers robots.txt .github/workflows/productionize-release.yml
+          git commit -m "chore: prepare production indexing"
+          git push origin HEAD:release/website-production-2026-08-10
