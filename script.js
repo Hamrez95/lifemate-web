@@ -7,6 +7,13 @@
   const heroStage = document.querySelector("[data-hero-stage]");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+  const favicon =
+    document.querySelector('link[rel~="icon"]') ?? document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "image/svg+xml";
+  favicon.href = "/favicon.svg?v=20260810-2";
+  if (!favicon.parentNode) document.head.appendChild(favicon);
+
   document.querySelectorAll("[data-year]").forEach((node) => {
     node.textContent = String(new Date().getFullYear());
   });
