@@ -15,8 +15,8 @@ Date: 2026-08-10
 - `tmp/qa/desktop-fa-after.jpg` — Persian desktop, 1363 × 936.
 - `tmp/qa/mobile-products-after.jpg` — browser-rendered same-origin QA frames,
   each 390 × 844, exercising the real mobile media queries.
-- Focused 390 × 844 browser views were also checked for the Persian hero
-  principles and the English layout.
+- Focused 390 × 844 browser views were also checked for the Persian hero and
+  the English layout.
 
 ## Comparison results
 
@@ -24,7 +24,7 @@ Date: 2026-08-10
 | --- | --- | --- |
 | P1 | Persian hero content is physically right-aligned | Passed |
 | P1 | Hero artwork stays inside the 390 px layout | Passed |
-| P1 | `مثل یک همراه واقعی` is complete and not clipped | Passed |
+| P1 | The three-item hero principles strip is absent in Persian and English | Passed |
 | P1 | Ecosystem logo remains horizontal on mobile | Passed |
 | P1 | Logo holes and outer background are transparent | Passed |
 | P1 | WellMate, women's health and CareMate product shots use the supplied high-resolution sources | Passed |

@@ -2624,48 +2624,6 @@ body {
   font-size: 62px;
   transform: rotate(-18deg);
 }
-.hero-principles {
-  position: absolute;
-  z-index: 9;
-  bottom: 27px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid rgba(83, 58, 59, 0.1);
-  background: rgba(255, 250, 242, 0.8);
-  backdrop-filter: blur(13px);
-}
-.hero-principles li {
-  min-height: 72px;
-  padding: 12px 18px;
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  column-gap: 8px;
-  align-content: center;
-  background: rgba(255, 255, 255, 0.28);
-}
-.hero-principles li > span {
-  grid-row: 1/3;
-  align-self: start;
-  color: var(--primary);
-  font-size: 11px;
-  font-weight: 850;
-}
-.hero-principles strong {
-  font-size: 13px;
-}
-.hero-principles small {
-  font-size: 11px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-}
 @keyframes mascot-float {
   0%,
   100% {
@@ -3020,9 +2978,6 @@ body {
   .hero-ribbon {
     width: 105%;
   }
-  .hero-principles {
-    bottom: 24px;
-  }
   .ecosystem-stage {
     min-height: 790px;
     grid-template-columns: 1fr 1fr;
@@ -3159,20 +3114,6 @@ body {
     bottom: 3px;
     width: 104%;
   }
-  .hero-principles {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    transform: none;
-    grid-template-columns: 1fr;
-    margin-top: -25px;
-  }
-  .hero-principles li {
-    min-height: 65px;
-  }
-  .hero-principles small {
-    font-size: 10px;
-  }
   .ecosystem-intro {
     padding-top: 85px;
   }
@@ -3272,9 +3213,6 @@ body {
   .hero-doodle-two {
     display: none;
   }
-  .hero-principles {
-    margin-top: -15px;
-  }
   .ecosystem-stage .bridge-product {
     grid-template-columns: 1fr;
   }
@@ -3320,10 +3258,6 @@ body {
   }
   .phone-task:nth-of-type(3) {
     display: none;
-  }
-  .hero-principles li {
-    grid-template-columns: 25px 1fr;
-    padding-inline: 13px;
   }
   .ecosystem-stage {
     padding-top: 160px;
@@ -3374,15 +3308,6 @@ body {
   margin-left: 0;
   margin-right: auto;
 }
-.hero-principles li {
-  min-width: 0;
-}
-.hero-principles strong {
-  display: block;
-  min-width: 0;
-  padding-block: 2px;
-  line-height: 1.6;
-}
 .app-screen,
 .women-product-shot {
   object-fit: contain;
@@ -3390,7 +3315,7 @@ body {
 
 @media (max-width: 700px) {
   .hero {
-    padding-bottom: 102px;
+    padding-bottom: 52px;
   }
   .hero-stage {
     left: 0;
@@ -3418,14 +3343,6 @@ body {
     bottom: 37px;
     width: min(41vw, 175px);
     height: min(86vw, 365px);
-  }
-  .hero-principles {
-    width: min(var(--container), calc(100% - 30px));
-    margin: -10px auto 0;
-  }
-  .hero-principles li {
-    grid-template-columns: max-content minmax(0, 1fr);
-    padding-inline: 16px;
   }
   .ecosystem-stage .bridge-center {
     transform: translateX(-50%);
@@ -3480,9 +3397,6 @@ body {
 @media (max-width: 360px) {
   .hero-stage {
     height: 400px;
-  }
-  .hero-principles {
-    width: calc(100% - 24px);
   }
   .story-visual {
     min-height: 450px;
