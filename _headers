@@ -5,7 +5,7 @@
   X-Frame-Options: DENY
   Cross-Origin-Opener-Policy: same-origin
   X-Robots-Tag: noindex, nofollow
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' mailto:
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://db.onlinewebfonts.com; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' mailto:
 
 /assets/*
   Cache-Control: public, max-age=604800
