@@ -96,3 +96,37 @@ select {
     line-height: 1.35;
   }
 }
+
+/* Keep the official Enamad trust seal compact beside the copyright. */
+.footer-bottom {
+  justify-content: flex-start;
+}
+
+.footer-bottom > a[href^="https://trustseal.enamad.ir/"] {
+  min-height: 0;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom > a[href^="https://trustseal.enamad.ir/"] img {
+  width: 64px;
+  max-height: 64px;
+  object-fit: contain;
+}
+
+.footer-bottom > a[href^="mailto:"] {
+  margin-left: auto;
+}
+
+@media (max-width: 620px) {
+  .footer-bottom {
+    gap: 12px;
+  }
+
+  .footer-bottom > a[href^="mailto:"] {
+    width: 100%;
+    margin-left: 0;
+  }
+}
