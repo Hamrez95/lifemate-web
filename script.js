@@ -18,6 +18,19 @@
     node.textContent = String(new Date().getFullYear());
   });
 
+  const footerBottom = document.querySelector(".footer-bottom");
+  const footerCopyright = footerBottom?.querySelector("span");
+  if (
+    footerBottom &&
+    footerCopyright &&
+    !footerBottom.querySelector('a[href^="https://trustseal.enamad.ir/"]')
+  ) {
+    footerCopyright.insertAdjacentHTML(
+      "afterend",
+      "<a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=773641&Code=bkskxTp6uPJ0JUjipzaKGflSOTpC6zo7'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=773641&Code=bkskxTp6uPJ0JUjipzaKGflSOTpC6zo7' alt='' style='cursor:pointer' code='bkskxTp6uPJ0JUjipzaKGflSOTpC6zo7'></a>",
+    );
+  }
+
   const updateHeader = () =>
     header?.classList.toggle("is-scrolled", window.scrollY > 10);
   updateHeader();
